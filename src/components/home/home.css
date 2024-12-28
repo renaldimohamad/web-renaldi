@@ -1,0 +1,32 @@
+.container-home-pages {
+   position: relative;
+   background-image: url("/images/aldy-photos-bg.jpg");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 92vh;
+   width: 100vw;
+   margin-top: -20px;
+}
+
+.container-home-pages::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.6);
+   z-index: 1;
+}
+
+.container-home {
+   position: relative;
+   z-index: 2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 10px;
+   height: 100%;
+}

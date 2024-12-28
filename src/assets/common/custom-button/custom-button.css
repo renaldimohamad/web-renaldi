@@ -1,0 +1,47 @@
+.custom-button {
+   padding: 8px 20px;
+   background-color: rgb(22, 194, 194);
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-button-link {
+   color: #ffffff;
+   border: none;
+   text-decoration: none;
+   position: relative;
+   background: none;
+}
+
+.custom-button-link.active {
+   color: rgb(22, 194, 194);
+}
+
+.custom-button-link::after {
+   content: "";
+   display: block;
+   transform: scaleX(0);
+   margin-top: 2px;
+   transition: transform 1s ease-out;
+   transform-origin: bottom left;
+   border-bottom: solid 2px rgb(22, 194, 194);
+}
+
+.custom-button-link:hover::after {
+   border-bottom: solid 2px rgb(22, 194, 194);
+   transition: transform 1s ease-in-out;
+   transform-origin: bottom left;
+   transform: scaleX(1);
+}
+.custom-button-link:hover {
+   color: rgb(22, 194, 194);
+}
+
+@media only screen and (max-width: 600px) {
+   .custom-button-link {
+      background: none;
+   }
+}

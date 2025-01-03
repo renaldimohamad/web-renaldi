@@ -1,0 +1,41 @@
+.skills-section {
+   text-align: center;
+}
+
+.skills-container {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.skill-bar {
+   display: flex;
+   flex-direction: column;
+}
+
+.skill-info {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 5px;
+   font-size: 14px;
+}
+
+.skill-progress {
+   height: 8px;
+   background-color: #bbb8b8;
+   border-radius: 4px;
+   overflow: hidden;
+}
+
+.skill-fill {
+   height: 100%;
+   background-color: #20c997; /* Warna progress bar */
+   width: 0; /* Default mulai dari 0 */
+   transition: width 1s ease-in-out; /* Transisi animasi selama 1 detik */
+}
+
+@media screen and (max-width: 768px) {
+   .container-skills-sm {
+      margin-bottom: 20px;
+   }
+}

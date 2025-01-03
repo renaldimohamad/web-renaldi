@@ -1,0 +1,28 @@
+.custom-button-message {
+   padding: 10px 8px;
+   background-color: rgb(28, 129, 129);
+   width: 50%;
+   color: white;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.icons-contact {
+   padding: 0.5rem;
+   border-radius: 50%;
+   color: rgb(28, 129, 129);
+   background-color: rgb(233, 241, 241);
+}
+
+.icons-contact:hover {
+   background-color: rgb(28, 129, 129);
+   color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+   .form-control-name {
+      margin-bottom: 3rem;
+   }
+}

@@ -1,0 +1,14 @@
+.img-portfolio-details {
+   width: 100%;
+   height: 100%;
+}
+
+.carousel-indicators button {
+   background-color: #6c757d; /* Warna indikator default */
+   border: none; /* Opsional: Menghilangkan border */
+}
+
+.carousel-indicators .active {
+   background-color: #0d6efd; /* Warna indikator aktif */
+   transform: scale(1.2); /* Opsional: Membuat indikator aktif lebih besar */
+}

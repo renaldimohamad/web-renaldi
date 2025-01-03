@@ -1,0 +1,11 @@
+.placeholder-gray::placeholder {
+   color: gray;
+}
+
+.placeholder-lightblue::placeholder {
+   color: lightblue;
+}
+
+.placeholder-red::placeholder {
+   color: red;
+}

@@ -1,12 +1,12 @@
 .container-home-pages {
    position: relative;
-   background-image: url("/images/aldy-photos-bg.jpg");
+   background-image: url("/images/profile-photos.jpg");
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
-   height: 92vh;
-   width: 100vw;
-   margin-top: -20px;
+   height: 100vh;
+   width: 100%;
+   margin-top: -16px;
 }
 
 .container-home-pages::before {
@@ -29,4 +29,29 @@
    flex-direction: column;
    gap: 10px;
    height: 100%;
+}
+
+.fade-in {
+   opacity: 0;
+   transform: translateY(200px);
+   animation: fadeIn 2s forwards;
+   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+.lorem-container {
+   z-index: 2;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: justify;
+   margin-top: -65px;
 }

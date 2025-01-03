@@ -22,7 +22,14 @@ const Index = () => {
    return (
       <div className="container-nav">
          {["sm"].map((expand) => (
-            <Navbar key={expand} expand={expand} className="mb-3 shadow-lg">
+            <Navbar
+               key={expand}
+               expand={expand}
+               className="mb-3 shadow-lg"
+               style={{
+                  backgroundColor: "#e9e8e6",
+               }}
+            >
                <div className="container-navbar">
                   <Container fluid>
                      <Navbar.Brand href="#">
@@ -104,10 +111,10 @@ const Index = () => {
                                  <div className="d-flex align-items-center gap-2 container-info">
                                     <RxResume className="icon-info" />
                                     <CustomButton
-                                       path="/resume"
-                                       customtext="Resume"
+                                       path="/portfolio"
+                                       customtext="Portfolio"
                                        className={`custom-button-link ${
-                                          location.pathname === "/resume"
+                                          location.pathname === "/portfolio"
                                              ? "active"
                                              : ""
                                        }`}

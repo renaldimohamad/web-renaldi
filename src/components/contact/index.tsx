@@ -142,12 +142,21 @@ const Index = () => {
                                  </div>
 
                                  <div className="d-flex gap-3">
-                                    <div className="icons-contact">
-                                       <LuPhone fontSize={25} />
-                                    </div>
+                                    <a
+                                       href="https://wa.me/6282195597549?text=Halo%20Renaldi,%20saya%20ingin%20berdiskusi."
+                                       target="_blank"
+                                       rel="noopener noreferrer"
+                                       style={{
+                                          textDecoration: "none",
+                                          color: "inherit",
+                                       }}
+                                    >
+                                       <div className="icons-contact">
+                                          <LuPhone fontSize={25} />
+                                       </div>
+                                    </a>
                                     <div className="d-flex flex-column">
                                        <span
-                                          className=""
                                           style={{
                                              textAlign: "justify",
                                           }}
@@ -155,7 +164,6 @@ const Index = () => {
                                           Call Me
                                        </span>
                                        <span
-                                          className=""
                                           style={{
                                              fontSize: "12px",
                                           }}
@@ -166,12 +174,20 @@ const Index = () => {
                                  </div>
 
                                  <div className="d-flex gap-3">
-                                    <div className="icons-contact">
-                                       <TfiEmail fontSize={25} />
-                                    </div>
+                                    <a
+                                       href="mailto:renaldi77@gmail.com?subject=Halo%20Renaldi&body=Saya%20ingin%20berdiskusi%20lebih%20lanjut."
+                                       target="_blank"
+                                       style={{
+                                          textDecoration: "none",
+                                          color: "inherit",
+                                       }}
+                                    >
+                                       <div className="icons-contact">
+                                          <TfiEmail fontSize={25} />
+                                       </div>
+                                    </a>
                                     <div className="d-flex flex-column">
                                        <span
-                                          className=""
                                           style={{
                                              textAlign: "justify",
                                           }}
@@ -179,7 +195,6 @@ const Index = () => {
                                           Email
                                        </span>
                                        <span
-                                          className=""
                                           style={{
                                              fontSize: "12px",
                                           }}
